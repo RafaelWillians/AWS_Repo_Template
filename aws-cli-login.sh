@@ -21,5 +21,11 @@ aws_secret_access_key = $AWS_SECRET_ACCESS_KEY
 aws_session_token = $AWS_SESSION_TOKEN
 EOL
 
+# Sobrescrever o arquivo ~/.aws/config com a região padrão
+cat <<EOL > ~/.aws/config
+[default]
+region = $AWS_DEFAULT_CONFIG
+EOL
+
 echo -e "Env Variables for AWS credentials overwritten!\nAWS Credentials ready!"
 
