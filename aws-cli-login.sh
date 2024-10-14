@@ -6,6 +6,12 @@ read -p "AWS Secret Access Key: " AWS_SECRET_ACCESS_KEY
 read -p "AWS Session Token: " AWS_SESSION_TOKEN
 read -p "AWS Default Region: " AWS_DEFAULT_REGION
 
+# Sobrescreve as variáveis de ambiente
+export AWS_ACCESS_KEY_ID=$AWS_ACCESS_KEY_ID
+export AWS_SECRET_ACCESS_KEY=$AWS_SECRET_ACCESS_KEY
+export AWS_SESSION_TOKEN=$AWS_SESSION_TOKEN
+export AWS_DEFAULT_REGION=$AWS_DEFAULT_REGION
+
 # Salva (sobrescreve) o arquivo ~/.aws/credentials
 mkdir -p ~/.aws
 cat <<EOL > ~/.aws/credentials
@@ -15,5 +21,5 @@ aws_secret_access_key = $AWS_SECRET_ACCESS_KEY
 aws_session_token = $AWS_SESSION_TOKEN
 EOL
 
-echo "AWS Credentials ready!"
+echo -e "Env Variables for AWS credentials overwritten!\nAWS Credentials ready!"
 
