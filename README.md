@@ -6,10 +6,7 @@ Template de repositório para usar com AWS CLI, compatível com Codespaces, Git
 
 ## Extensions
 * AWS CLI
-* Microsoft PowerShell
 * Git Graph
 * Git-log
 * GitHub Actions
-* GitHub Copilot
-* GitHub Copilot Chat
 * github markdown preview
