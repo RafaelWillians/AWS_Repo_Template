@@ -13,6 +13,3 @@ Template de repositório para usar com AWS CLI, compatível com Codespaces, Git
 * GitHub Copilot
 * GitHub Copilot Chat
 * github markdown preview
-
-## Extras
-Preconfigured AWS tokens (via Repository Secrets)
