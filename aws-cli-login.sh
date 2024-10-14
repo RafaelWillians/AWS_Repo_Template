@@ -24,7 +24,7 @@ EOL
 # Sobrescrever o arquivo ~/.aws/config com a região padrão
 cat <<EOL > ~/.aws/config
 [default]
-region = $AWS_DEFAULT_CONFIG
+region = $AWS_DEFAULT_REGION
 EOL
 
 echo -e "Env Variables for AWS credentials overwritten!\nAWS Credentials ready!"
