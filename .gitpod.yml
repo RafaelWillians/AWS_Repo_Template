@@ -8,7 +8,6 @@ tasks:
       unzip -o awscliv2.zip && \
       sudo ./aws/install && \      
       cd $THEIA_WORKSPACE_ROOT && \
-      rm -rf /workspace/awscliv2.zip /workspace/aws
-
-      
+      rm -rf /workspace/awscliv2.zip /workspace/aws && \
+      chmod +x aws-cli-login.sh
       

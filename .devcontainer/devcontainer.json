@@ -20,5 +20,6 @@
 	  "--env", "AWS_DEFAULT_REGION=${AWS_DEFAULT_REGION}",
 	  "--env", "AWS_SESSION_TOKEN=${AWS_SESSION_TOKEN}",
 	  "--env", "AWS_CLI_AUTO_PROMPT=on-partial"
-	]
-  }
+	],
+	"postCreateCommand": "chmod +x aws-cli-login.sh"
+}
