@@ -13,3 +13,4 @@ Template de repositório para usar com AWS CLI, compatível com Codespaces, Git
 * Github Markdown Preview
 * Hashicorp Terraform
 * Live Server
+* GitHub CLI
