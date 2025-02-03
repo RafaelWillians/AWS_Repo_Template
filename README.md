@@ -4,10 +4,11 @@ Repo template for use with AWS CLI, compatible with Codespaces, GitPod and DevCo
 
 Template de repositório para usar com AWS CLI, compatível com Codespaces, GitPod e extensão DevContainer (para VSCode).
 
-## Extensions
+## Extensões
 * AWS CLI
 * Git Graph
 * Git-log
 * GitHub Actions
 * github markdown preview
 * Hashicorp Terraform
+* Live Server
