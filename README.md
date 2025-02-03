@@ -6,6 +6,7 @@ Template de repositório para usar com AWS CLI, compatível com Codespaces, Git
 
 ## Extensões
 * AWS CLI
+* Draw.io Integration
 * Git Graph
 * Git-log
 * GitHub Actions
