@@ -9,5 +9,8 @@ tasks:
 
 vscode:
   extensions:
-    - hashicorp.terraform      
-      
+    - hashicorp.terraform     
+    - hediet.vscode-drawio
+    - mhutchie.git-graph
+    - phil294.git-log--graph
+    - GitHub.vscode-github-actions

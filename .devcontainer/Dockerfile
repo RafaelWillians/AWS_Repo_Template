@@ -1,6 +1,6 @@
 FROM mcr.microsoft.com/vscode/devcontainers/base:ubuntu
 
-RUN apt-get update && \
+RUN apt-get update \
     && apt-get install -y curl unzip sudo \
     && sudo curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip" \
     && unzip -o awscliv2.zip \
