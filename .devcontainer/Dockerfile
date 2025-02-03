@@ -6,7 +6,7 @@ RUN apt-get update \
     && unzip -o awscliv2.zip \
     && sudo ./aws/install \      
     && sudo apt-get install -y gnupg software-properties-common curl \
-    && curl -fsSL https://apt.releases.hashicorp.com/gpg | sudo apt-key add - \
+    && curl -fsSL https://apt.releases.hashicorp.com/gpg | sudo tee /etc/apt/trusted.gpg.d/hashicorp.asc
     && sudo apt-add-repository -y "deb [arch=amd64] https://apt.releases.hashicorp.com $(lsb_release -cs) main" \
     && sudo apt-get install -y terraform \
     && chmod +x ./aws-cli-login.sh
