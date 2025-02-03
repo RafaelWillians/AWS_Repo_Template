@@ -8,10 +8,12 @@
 	  "vscode": {
 		"extensions": [
 			"mhutchie.git-graph",
-			"phil294.git-log--graph",			
+			"phil294.git-log--graph",
 			"github.vscode-github-actions",
 			"bierner.github-markdown-preview",
-			"hashicorp.terraform"
+			"hashicorp.terraform",
+			"ritwickdey.LiveServer",
+			"hediet.vscode-drawio"
 		]
 	  }
 	},	
