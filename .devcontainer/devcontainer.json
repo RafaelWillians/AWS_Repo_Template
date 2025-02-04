@@ -17,5 +17,5 @@
 		]
 	  }
 	},	
-	"postCreateCommand": "chmod +x aws-cli-login.sh"
+	"postCreateCommand": "chmod +x aws-cli-login.sh && chmod +x aws-cli-login-paste-credentials.sh"
 }

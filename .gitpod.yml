@@ -6,6 +6,7 @@ tasks:
       AWS_CLI_AUTO_PROMPT: on-partial
     before: |
       chmod +x aws-cli-login.sh
+      chmod +x aws-cli-login-paste-credentials.sh
 
 vscode:
   extensions:
