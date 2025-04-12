@@ -1,6 +1,11 @@
 {
-	"name": "Codespace Main",		
-	"dockerFile": "Dockerfile",
+	"name": "Codespace Main",
+	"image": "ghcr.io/rafaelwillians/aws_repo_template:latest",
+	
+	"build": {
+		"dockerfile": "Dockerfile"
+	},
+	
 	"features": {
 	  "ghcr.io/devcontainers/features/github-cli:1": {}
 	},
