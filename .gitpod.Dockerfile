@@ -13,4 +13,4 @@ RUN sudo curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "aws
     && sudo apt install -y gh \
     && sudo apt-get update -y
     
-RUN sudo pip3 install boto3
+RUN pip3 install boto3
