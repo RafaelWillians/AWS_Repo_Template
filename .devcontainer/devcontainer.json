@@ -1,8 +1,11 @@
 {
 	"name": "Codespace Main",
-	"image": "mcr.microsoft.com/devcontainers/base:ubuntu",	
+	"build": {
+		"dockerfile": "Dockerfile"
+	},
 	"features": {
-	  "ghcr.io/devcontainers/features/github-cli:1": {}
+	  "ghcr.io/devcontainers/features/github-cli:1": {},
+	  "ghcr.io/devcontainers/features/docker-in-docker:2": {}
 	},
 	"customizations": {
 	  "vscode": {
@@ -13,9 +16,18 @@
 			"bierner.github-markdown-preview",
 			"hashicorp.terraform",
 			"ritwickdey.LiveServer",
-			"hediet.vscode-drawio"
+			"hediet.vscode-drawio",
+			"amazonwebservices.aws-toolkit-vscode"
 		]
 	  }
+	},
+	"forwardPorts": [4566],
+	"portsAttributes": {
+		"4566": {
+			"label": "MiniStack (AWS)",
+			"onAutoForward": "silent"
+		}
 	},	
-	"postCreateCommand": "chmod +x aws-cli-login.sh && chmod +x aws-cli-login-paste-credentials.sh && pip3 install boto3"
+	"postCreateCommand": "chmod +x aws-cli-login.sh aws-cli-login-paste-credentials.sh 2>/dev/null || true && pip3 install boto3 --break-system-packages",
+	"postStartCommand": "bash .devcontainer/start.sh"
 }
